@@ -14,3 +14,12 @@ object mario {
 
 }
 
+object ballesta {}
+
+object jabalina {}
+
+object castillo {}
+
+object aurora {}
+
+object tipa {}
