@@ -14,7 +14,12 @@ object mario {
 
 }
 
-object ballesta {}
+object ballesta {
+	var flechas = 10
+	
+	method potencia() {return 10}
+	method dispara() {flechas -= 1}
+}
 
 object jabalina {}
 
