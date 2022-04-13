@@ -1,0 +1,6 @@
+
+test "floki con ballesta encuentra castillo" {
+
+	assert.that(true)
+
+}
