@@ -37,23 +37,31 @@ object jabalina {
 object castillo {
 	var defensa = 150
 	
-	method altrura(){return 20}
+	method altrura() = 20
+	method defensa() = defensa
+	method valorQueOtorra() = defensa * 0.2
 	method reciveDmg(arma){
 		defensa = defensa-arma.potencia()
 	}
+	method recibirTrabajo() {defensa = 200.min(defensa + 20)}
 }
 
 object aurora {
-	var vida = 1
+	var vida = true
 	
 	method altura() {return 1}
 	method reciveDmg(arma){
-		if(arma.potencia() > 9){vida -= 1}
+		if(arma.potencia() > 9){vida = false}
 		else{}
 	}
+	method valorQueOtorra() = 15
+	method recibirTrabajo() {}
 }
 
 object tipa {
+	var tamanio = 8
 	
-	method altura(){return 8 }
+	method altura(){return tamanio }
+	method valorQueOtorra() = tamanio * 2
+	method recibirTrabajo() {tamanio += 1}
 }
